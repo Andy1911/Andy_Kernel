@@ -12490,7 +12490,6 @@ static struct attribute *sound_control_attrs[] = {
 		&headphone_gain_attribute.attr,
 		&mic_gain_attribute.attr,
 		&headphone_pa_gain_attribute.attr,
-		&speaker_gain_attribute.attr,
 		NULL,
 };
 

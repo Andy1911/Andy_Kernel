@@ -1690,7 +1690,7 @@ static int get_prop_capacity(struct fg_chip *chip)
 	if (chip->battery_missing)
 		return MISSING_CAPACITY;
 #ifndef CONFIG_MACH_XIAOMI_KENZO
-	if (!chip->profile_loaded && !chip->use_otp_profile) {
+	// if (!chip->profile_loaded && !chip->use_otp_profile) {
 		pr_info("loading batt profile, return last soc\n");
 		return chip->last_soc;
 	}
@@ -1734,7 +1734,7 @@ static int get_last_soc(struct fg_chip *chip)
 
 	if (tries == MAX_TRIES_SOC) {
 		pr_err("shadow registers do not match\n");
-		return DEFAULT_CAPACITY;
+		// return DEFAULT_CAPACITY;
 	}
 
 	if (cap[0] > 0)

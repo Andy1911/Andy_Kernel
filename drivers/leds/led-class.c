@@ -21,7 +21,7 @@
 #include <linux/leds.h>
 #include "leds.h"
 
-#define LED_BUFF_SIZE 50
+#define LED_BUFF_SIZE 60
 
 static struct class *leds_class;
 
@@ -87,8 +87,8 @@ static ssize_t led_max_brightness_show(struct device *dev,
 }
 
 static struct device_attribute led_class_attrs[] = {
-	__ATTR(brightness, 0644, led_brightness_show, led_brightness_store),
-	__ATTR(max_brightness, 0644, led_max_brightness_show,
+	__ATTR(brightness, 0655, led_brightness_show, led_brightness_store),
+	__ATTR(max_brightness, 0655, led_max_brightness_show,
 			led_max_brightness_store),
 #ifdef CONFIG_LEDS_TRIGGERS
 	__ATTR(trigger, 0644, led_trigger_show, led_trigger_store),

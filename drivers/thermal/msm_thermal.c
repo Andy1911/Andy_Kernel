@@ -62,7 +62,7 @@
 #define MSM_TSENS_PRINT  "log_tsens_temperature"
 #define CPU_BUF_SIZE 64
 #define CPU_DEVICE "cpu%d"
-#define HOTPLUG_RETRY_INTERVAL_MS 100
+#define HOTPLUG_RETRY_INTERVAL_MS 500
 #define MAX_DEBUGFS_CONFIG_LEN   32
 #define MSM_THERMAL_CONFIG        "config"
 #define MSM_CONFIG_DATA           "data"
